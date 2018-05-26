@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:local="clr-namespace:laser" x:Class="laser.laserPage">
+<StackLayout Padding="0,99,0,0">
+    <Label Text="kindly enter your username and password" VerticalOptions="Center" HorizontalOptions="Center" />
+    <Entry x:Name="usernameField" Placeholder="username" HorizontalTextAlignment="Center" ></Entry>
+            <Entry x:Name="passField" Placeholder="password" IsPassword="true" HorizontalTextAlignment="Center"></Entry>
+
+        <Button Text="register" BackgroundColor="Silver" Clicked="Handle_Clicked" >     
+        </Button>
+    </StackLayout>
+</ContentPage>
