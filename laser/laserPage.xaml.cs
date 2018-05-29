@@ -20,10 +20,13 @@ namespace laser
        async public void login()
         {
             var credentials = Credentials.UsernamePassword(usernameField.Text, passField.Text, createUser: true);
-
             var authURL = new System.Uri("https://game-object.us1.cloud.realm.io/");
             var user = await User.LoginAsync(credentials, authURL);
-            var realm = Realm.GetInstance();
+            var serverURL = new System.Uri("realm://game-object.us1.cloud.realm.io/~/default");
+            var configuration = new SyncConfiguration(user, serverURL);
+            var realm = Realm.GetInstance(configuration);
+           var realmSession= realm.GetSession();
+            var state = realmSession.State;
             realm.Write(() =>
             {
                 realm.Add(new Player { Health = 1, name = "apex" });
