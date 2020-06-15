@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"              xmlns:maps="clr-namespace:Xamarin.Forms.Maps;assembly=Xamarin.Forms.Maps"
+ xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"     xmlns:syncfusion="clr-namespace:Syncfusion.SfRotator.XForms;assembly=Syncfusion.SfRotator.XForms"
+ x:Class="laser.GameScene">
+    <ContentPage.Content>
+        <StackLayout x:Name="MainStack" Padding="0,0,0,0">
+            <maps:Map ></maps:Map>
+             <syncfusion:SfRotator  HeightRequest="99" x:Name="rotator" />
+             <StackLayout WidthRequest="999" x:Name="FireMode"   Orientation="Horizontal" HorizontalOptions="Center">
+                <Label Text="Auto Fire Mode" HorizontalOptions="Start"> </Label>
+            <Switch HorizontalOptions="EndAndExpand" ></Switch>
+                </StackLayout>
+                    <Button x:Name="ButtonStatistics" Clicked="PushCharts" TextColor="White" Text="statistics" BackgroundColor="Teal"> </Button>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

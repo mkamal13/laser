@@ -7,5 +7,8 @@
 
         <Button Text="register" BackgroundColor="Silver" Clicked="Handle_Clicked" >     
         </Button>
+        <Button Text="counter++" BackgroundColor="Silver" Clicked="Handle_Clicked_1" >     
+        </Button>
+        <Label Text="count is" x:Name="countLabel"></Label>
     </StackLayout>
 </ContentPage>

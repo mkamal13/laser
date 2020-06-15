@@ -18,10 +18,8 @@ namespace laser
          */
         public void TriggerEvent(Player source, Player target)
         {
-            // Generate announcement log
             string text = FormatAnnouncement(source, target);
-            // Play sound
-            // Apply any effects
+           
         }
 
         public string FormatAnnouncement(Player source, Player target)

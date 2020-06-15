@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="laser.JoinGame" xmlns:syncfusion="clr-namespace:Syncfusion.SfPicker.XForms;assembly=Syncfusion.SfPicker.XForms"  >
+
+    <ContentPage.Content >
+        <StackLayout Padding="3,19" VerticalOptions="Center">
+          <Picker IsVisible="true" Title="game location" HorizontalOptions="Center"  BackgroundColor="Silver" x:Name="locationselection">
+                
+            </Picker> 
+       <Picker IsVisible="true"  Title="game team" HorizontalOptions="Center"  BackgroundColor="Silver" x:Name="teamselection">
+                
+            </Picker>
+             <Button Text="start game" Clicked="startGame" TextColor="White" BackgroundColor="Teal"></Button>
+
+       </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

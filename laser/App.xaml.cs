@@ -1,5 +1,6 @@
 ﻿using Xamarin.Forms;
 using Realms;
+
 namespace laser
 {
     public partial class App : Application
@@ -8,7 +9,7 @@ namespace laser
         {
             InitializeComponent();
 
-            MainPage = new laserPage();
+            MainPage = new MainPage();
 
 
         }

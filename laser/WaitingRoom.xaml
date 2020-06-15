@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:local="clr-namespace:WaitingRoom"
+ xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="laser.WaitingRoom">
+    <ContentPage.Content>
+        <StackLayout Margin="0,12,0,12">
+            <ListView x:Name="PlayersList" Margin="-15, 0,0,14">
+
+                </ListView>
+            <Button Text="start playing!" BorderColor="Silver" Clicked="Handle_Clicked" TextColor="White" BackgroundColor="Teal"></Button>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
